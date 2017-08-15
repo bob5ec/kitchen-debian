@@ -2,6 +2,8 @@
 
 A Test Kitchen Driver for Debian.
 
+[![Build Status](https://travis-ci.org/bob5ec/kitchen-debian.svg?branch=master)](https://travis-ci.org/bob5ec/kitchen-debian)
+
 ## <a name="requirements"></a> Requirements
 
 **TODO:** document any software or library prerequisites that are required to
