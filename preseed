@@ -323,8 +323,9 @@ d-i partman/confirm_nooverwrite boolean true
 ### Package selection
 tasksel tasksel/first multiselect minimal
 # Individual additional packages to install
-d-i pkgsel/include string openssh-server
+d-i pkgsel/include string openssh-server ansible
 # Whether to upgrade packages after debootstrap.
+# Allowed values: none, safe-upgrade, full-upgrade
 d-i pkgsel/upgrade select none
 #popularity-contest popularity-contest/participate boolean false
 
@@ -433,5 +434,5 @@ d-i finish-install/reboot_in_progress note
 # directly, or use the apt-install and in-target commands to easily install
 # packages and run commands in the target system.
 #d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
-#d-i preseed/late_command string in-target wget -O - https://raw.githubusercontent.com/bob5ec/kitchen-debian/master/deploy | /bin/sh
+d-i preseed/late_command string in-target wget -O - https://raw.githubusercontent.com/bob5ec/kitchen-debian/master/deploy.sh | /bin/bash
 

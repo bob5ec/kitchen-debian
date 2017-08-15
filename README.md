@@ -10,3 +10,8 @@
 * create deploy script to register new debian installation within vault
  create ssh key and put IP along with private key into vault
 * create kitchen.io plugin to provide newly created installation to kitchen
+
+preseed
+* german keyboard
+* upgrade packages
+* set mirror
