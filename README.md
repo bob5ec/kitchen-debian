@@ -21,7 +21,7 @@ Please read the [Driver usage][driver_usage] page for more details.
  create ssh key and put IP along with private key into vault
 * create kitchen.io plugin to provide newly created installation to kitchen
 
-preseed
+### preseed
 * german keyboard
 * upgrade packages
 * set mirror
